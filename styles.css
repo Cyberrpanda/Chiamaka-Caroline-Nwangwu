@@ -1,0 +1,56 @@
+/* styles.css - custom colour classes, fade animations, and overrides */
+
+/* Custom colour palette */
+.bg-dark-blue {
+  background-color: #1d3557;
+}
+.bg-medium-blue {
+  background-color: #457b9d;
+}
+.bg-light-blue {
+  background-color: #8ecae6;
+}
+.text-dark-blue {
+  color: #1d3557;
+}
+.text-medium-blue {
+  color: #457b9d;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Section offset for fixed header */
+.scroll-mt-20 {
+  scroll-margin-top: 5rem;
+}
+
+/* Fade-in animation on scroll */
+.fade-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-section.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover transitions for cards */
+.hover\:shadow-2xl:hover {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Image hover scale */
+img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* Ensure long words break */
+a, p, h1, h2, h3, h4, li {
+  word-break: break-word;
+}
