@@ -1,4 +1,4 @@
-/* styles.css - Optimised for performance, no backdrop-blur on cards, reduced hover transforms */
+/* styles.css - Optimised for performance, with mobile menu styles */
 
 /* Colour variables */
 .bg-dark-blue {
@@ -39,7 +39,7 @@ html {
   transform: translateY(0);
 }
 
-/* Skill cards - simpler hover effect */
+/* Skill cards - hover effect */
 .skill-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -49,7 +49,7 @@ html {
   box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15);
 }
 
-/* Job cards - removed scale, only shadow and slight lift */
+/* Job cards - hover effect */
 .job-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -59,7 +59,7 @@ html {
   box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.2);
 }
 
-/* Date badge - no change */
+/* Date badge gradient */
 .date-badge {
   background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
 }
@@ -84,12 +84,31 @@ html {
   width: 100%;
 }
 
-/* No backdrop-blur on any cards to reduce GPU load */
-.bg-white\/80 {
-  background-color: rgba(255, 255, 255, 0.8);
+/* Mobile menu styles */
+#mobile-menu {
+  transition: all 0.3s ease-in-out;
 }
 
-/* Ensure images are not too heavy */
+#mobile-menu:not(.hidden) {
+  display: flex;
+  flex-direction: column;
+  background-color: #1d3557;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  #mobile-menu:not(.hidden) {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+/* Ensure images are responsive */
 img {
   max-width: 100%;
   height: auto;

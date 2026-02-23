@@ -13,18 +13,25 @@
 </head>
 <body class="bg-light-blue text-gray-800 antialiased overflow-x-hidden">
 
-  <!-- Header with colour #1d3557 -->
+  <!-- Header with colour #1d3557 and hamburger menu -->
   <header class="bg-dark-blue text-white py-4 sticky top-0 z-30 shadow-lg">
     <div class="container mx-auto px-4 flex flex-wrap items-center justify-between gap-2">
       <h1 class="text-xl md:text-2xl font-bold tracking-tight"><span class="text-[#8ecae6]">CHIAMAKA CAROLINE</span> NWANGWU</h1>
-      <nav class="flex flex-wrap gap-3 text-sm md:text-base">
-        <a href="#hero" class="nav-link hover:text-[#8ecae6] transition">Hero</a>
-        <a href="#skills" class="nav-link hover:text-[#8ecae6] transition">Skills</a>
-        <a href="#summary" class="nav-link hover:text-[#8ecae6] transition">Summary</a>
-        <a href="#work-history" class="nav-link hover:text-[#8ecae6] transition">Work</a>
-        <a href="#education" class="nav-link hover:text-[#8ecae6] transition">Education</a>
-        <a href="#certifications" class="nav-link hover:text-[#8ecae6] transition">Certifications</a>
-        <a href="#contact" class="nav-link hover:text-[#8ecae6] transition">Contact</a>
+      
+      <!-- Hamburger button (visible on mobile) -->
+      <button id="menu-toggle" class="block md:hidden text-white focus:outline-none text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navigation menu (hidden on mobile by default, shown when toggled) -->
+      <nav id="mobile-menu" class="w-full md:w-auto hidden md:flex flex-col md:flex-row gap-3 text-sm md:text-base mt-4 md:mt-0">
+        <a href="#hero" class="nav-link hover:text-[#8ecae6] transition py-2 md:py-0">Hero</a>
+        <a href="#skills" class="nav-link hover:text-[#8ecae6] transition py-2 md:py-0">Skills</a>
+        <a href="#summary" class="nav-link hover:text-[#8ecae6] transition py-2 md:py-0">Summary</a>
+        <a href="#work-history" class="nav-link hover:text-[#8ecae6] transition py-2 md:py-0">Work</a>
+        <a href="#education" class="nav-link hover:text-[#8ecae6] transition py-2 md:py-0">Education</a>
+        <a href="#certifications" class="nav-link hover:text-[#8ecae6] transition py-2 md:py-0">Certifications</a>
+        <a href="#contact" class="nav-link hover:text-[#8ecae6] transition py-2 md:py-0">Contact</a>
       </nav>
     </div>
   </header>
@@ -58,8 +65,7 @@
       </div>
     </section>
 
-
-    <!-- Skills section – redesigned as interactive cards -->
+     <!-- Skills section – redesigned as interactive cards -->
     <section id="skills" class="scroll-mt-20 fade-up">
       <h3 class="text-3xl font-bold text-dark-blue mb-8 inline-block border-b-4 border-[#457b9d] pb-2">SKILLS & EXPERTISE</h3>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -345,7 +351,7 @@
   <!-- Footer with colour #457b9d -->
   <footer class="bg-medium-blue text-white py-8 mt-16">
     <div class="container mx-auto px-4 text-center">
-      <p class="text-sm md:text-base">© <span id="current-year"></span> CHIAMAKA CAROLINE NWANGWU – All rights reserved.</p>
+      <p class="text-sm md:text-base">© <span id="current-year"></span> CHIAMAKA CAROLINE NWANGWU – All rights reserved. Compliance portfolio.</p>
     </div>
   </footer>
 

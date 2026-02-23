@@ -1,4 +1,4 @@
-// script.js – Optimised: no heavy computations, just essential interactivity
+// script.js – Optimised, with hamburger menu toggle and auto-close on link click
 
 document.addEventListener('DOMContentLoaded', function() {
   // Set current year in footer
@@ -16,10 +16,10 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         header.classList.remove('shadow-xl');
       }
-    }, { passive: true }); // passive for better scroll performance
+    }, { passive: true });
   }
 
-  // Intersection Observer for fade-up sections (lightweight)
+  // Intersection Observer for fade-up sections
   const faders = document.querySelectorAll('.fade-up');
   if (faders.length > 0) {
     const observer = new IntersectionObserver((entries) => {
@@ -38,5 +38,35 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  console.log('✅ Optimised portfolio loaded – smooth and stable.');
+  // Hamburger menu toggle
+  const menuToggle = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  if (menuToggle && mobileMenu) {
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+      // Change icon between bars and times
+      const icon = menuToggle.querySelector('i');
+      if (mobileMenu.classList.contains('hidden')) {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      } else {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      }
+    });
+
+    // Close menu when a link is clicked (for better UX)
+    const navLinks = mobileMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      });
+    });
+  }
+
+  console.log('✅ Optimised portfolio with mobile hamburger menu loaded.');
 });
