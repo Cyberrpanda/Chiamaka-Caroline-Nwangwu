@@ -1,6 +1,6 @@
-/* styles.css - custom colour classes, fade animations, and overrides */
+/* styles.css - custom colour palette, animations, and interactive effects */
 
-/* Custom colour palette */
+/* Colour variables */
 .bg-dark-blue {
   background-color: #1d3557;
 }
@@ -27,30 +27,82 @@ html {
   scroll-margin-top: 5rem;
 }
 
-/* Fade-in animation on scroll */
-.fade-section {
+/* Fade-up animation (initially hidden) */
+.fade-up {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 
-.fade-section.section-visible {
+.fade-up.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Hover transitions for cards */
-.hover\:shadow-2xl:hover {
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+/* Floating animation for hero image */
+.floating {
+  animation: float 4s ease-in-out infinite;
 }
 
-/* Image hover scale */
-img:hover {
-  transform: scale(1.05);
-  transition: transform 0.3s ease;
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
 }
 
-/* Ensure long words break */
-a, p, h1, h2, h3, h4, li {
-  word-break: break-word;
+/* Skill cards */
+.skill-card {
+  transition: all 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
+}
+
+/* Job cards */
+.job-card {
+  transition: all 0.3s ease;
+}
+
+.job-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Date badge */
+.date-badge {
+  background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
+}
+
+/* Nav link underline effect */
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #8ecae6;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Glassmorphism effect for cards (already in HTML classes) */
+.backdrop-blur-sm {
+  backdrop-filter: blur(8px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 640px) {
+  .skill-card {
+    padding: 1rem;
+  }
 }

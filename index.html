@@ -4,87 +4,128 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chiamaka Caroline Nwangwu · Compliance Officer</title>
-  <!-- Tailwind CSS v3 (official CDN) -->
+  <!-- Tailwind CSS v3 -->
   <script src="https://cdn.tailwindcss.com"></script>
   <!-- Font Awesome 6 (free) -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <!-- custom styles -->
+  <!-- Custom styles -->
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-light-blue text-gray-800 antialiased">
+<body class="bg-light-blue text-gray-800 antialiased overflow-x-hidden">
 
-  <!-- header with colour #1d3557 -->
-  <header class="bg-dark-blue text-white py-4 sticky top-0 z-20 shadow-md">
+  <!-- Header with colour #1d3557 -->
+  <header class="bg-dark-blue text-white py-4 sticky top-0 z-30 shadow-lg backdrop-blur-sm bg-opacity-90">
     <div class="container mx-auto px-4 flex flex-wrap items-center justify-between gap-2">
-      <h1 class="text-xl md:text-2xl font-bold tracking-tight">CHIAMAKA CAROLINE NWANGWU</h1>
+      <h1 class="text-xl md:text-2xl font-bold tracking-tight"><span class="text-[#8ecae6]">CHIAMAKA CAROLINE</span> NWANGWU</h1>
       <nav class="flex flex-wrap gap-3 text-sm md:text-base">
-        <a href="#hero" class="hover:underline hover:text-[#8ecae6] transition">Hero</a>
-        <a href="#skills" class="hover:underline hover:text-[#8ecae6] transition">Skills</a>
-        <a href="#summary" class="hover:underline hover:text-[#8ecae6] transition">Summary</a>
-        <a href="#work-history" class="hover:underline hover:text-[#8ecae6] transition">Work</a>
-        <a href="#education" class="hover:underline hover:text-[#8ecae6] transition">Education</a>
-        <a href="#certifications" class="hover:underline hover:text-[#8ecae6] transition">Certs</a>
-        <a href="#contact" class="hover:underline hover:text-[#8ecae6] transition">Contact</a>
+        <a href="#hero" class="nav-link hover:text-[#8ecae6] transition">Hero</a>
+        <a href="#skills" class="nav-link hover:text-[#8ecae6] transition">Skills</a>
+        <a href="#summary" class="nav-link hover:text-[#8ecae6] transition">Summary</a>
+        <a href="#work-history" class="nav-link hover:text-[#8ecae6] transition">Work</a>
+        <a href="#education" class="nav-link hover:text-[#8ecae6] transition">Education</a>
+        <a href="#certifications" class="nav-link hover:text-[#8ecae6] transition">Certs</a>
+        <a href="#contact" class="nav-link hover:text-[#8ecae6] transition">Contact</a>
       </nav>
     </div>
   </header>
 
-  <main class="container mx-auto px-4 py-8 md:py-12 space-y-12">
+  <main class="container mx-auto px-4 py-8 md:py-12 space-y-16">
 
-    <!-- hero section: left text, right image (fade-section) -->
-    <section id="hero" class="grid md:grid-cols-2 gap-8 items-center scroll-mt-20 fade-section">
-      <div class="bg-white/70 backdrop-blur-sm p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
-        <h2 class="text-4xl md:text-5xl font-bold text-dark-blue leading-tight">CHIAMAKA CAROLINE NWANGWU</h2>
-        <p class="text-xl mt-3 text-gray-700">Compliance Officer · LL.M Financial Regulation & Compliance</p>
-        <p class="mt-4 text-gray-600 max-w-lg">Strategic and pragmatic professional with over 8 years of experience in law firm environments and financial services, specialised in AML/KYC and regulatory risk.</p>
+    <!-- Hero section -->
+    <section id="hero" class="grid md:grid-cols-2 gap-8 items-center scroll-mt-20 fade-up">
+      <div class="hero-text bg-white/30 backdrop-blur-sm p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition duration-500 border border-white/20">
+        <h2 class="text-4xl md:text-5xl font-bold text-dark-blue leading-tight">CHIAMAKA CAROLINE <span class="text-[#457b9d]">NWANGWU</span></h2>
+        <p class="text-xl mt-3 text-gray-700 font-light">Compliance Officer · LL.M Financial Regulation & Compliance</p>
+        <p class="mt-4 text-gray-600 max-w-lg leading-relaxed">Strategic and pragmatic professional with over 8 years of experience in law firm environments and financial services, specialised in AML/KYC and regulatory risk.</p>
         <div class="mt-6 flex flex-wrap gap-4">
-          <a href="#contact" class="bg-dark-blue text-white px-6 py-2 rounded-full hover:bg-[#457b9d] transition shadow-md hover:shadow-xl">Contact me</a>
-          <a href="#work-history" class="border-2 border-dark-blue text-dark-blue px-6 py-2 rounded-full hover:bg-dark-blue hover:text-white transition shadow-md hover:shadow-xl">View history</a>
+          <a href="#contact" class="bg-dark-blue text-white px-8 py-3 rounded-full hover:bg-[#457b9d] transition shadow-lg hover:shadow-xl flex items-center gap-2"><i class="fas fa-envelope"></i> Contact me</a>
+          <a href="#work-history" class="border-2 border-dark-blue text-dark-blue px-8 py-3 rounded-full hover:bg-dark-blue hover:text-white transition shadow-lg hover:shadow-xl flex items-center gap-2"><i class="fas fa-briefcase"></i> View history</a>
         </div>
       </div>
       <div class="flex justify-center md:justify-end">
-        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Chiamaka Caroline Nwangwu portrait" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover shadow-2xl border-4 border-white hover:scale-105 transition duration-300">
+        <div class="relative floating">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Chiamaka Caroline Nwangwu portrait" class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover shadow-2xl border-4 border-white hover:scale-105 transition duration-500">
+          <div class="absolute -bottom-4 -right-4 bg-dark-blue text-white p-3 rounded-full shadow-lg"><i class="fas fa-check-circle text-2xl"></i></div>
+        </div>
       </div>
     </section>
 
-    <!-- skills (fade-section) -->
-    <section id="skills" class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 scroll-mt-20 fade-section">
-      <h3 class="text-2xl font-bold text-dark-blue mb-4 border-b-2 border-[#457b9d] pb-2">SKILLS</h3>
-      <div class="grid md:grid-cols-2 gap-x-8 gap-y-1">
-        <ul class="list-disc list-inside space-y-1 text-gray-800">
-          <li>Analytical and Critical thinking</li>
-          <li>Risk Assessment and Management</li>
-          <li>Atten to detail</li>
-          <li>Effective Communication</li>
-          <li>AML, KYC and Sanctions Compliance</li>
-        </ul>
-        <ul class="list-disc list-inside space-y-1 text-gray-800">
-          <li>Interpersonal and Stakeholder Skills</li>
-          <li>Time Management and Organisation</li>
-          <li>Problem Solving and Conflict Resolution</li>
-        </ul>
+    <!-- Skills section – redesigned as interactive cards -->
+    <section id="skills" class="scroll-mt-20 fade-up">
+      <h3 class="text-3xl font-bold text-dark-blue mb-8 inline-block border-b-4 border-[#457b9d] pb-2">SKILLS & EXPERTISE</h3>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Skill 1 -->
+        <div class="skill-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30 hover:-translate-y-2">
+          <i class="fas fa-brain text-4xl text-[#457b9d] mb-4"></i>
+          <h4 class="text-xl font-semibold text-dark-blue">Analytical & Critical Thinking</h4>
+          <p class="text-gray-600 mt-2 text-sm">Strategic analysis and logical reasoning for complex compliance scenarios.</p>
+        </div>
+        <!-- Skill 2 -->
+        <div class="skill-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30 hover:-translate-y-2">
+          <i class="fas fa-chart-line text-4xl text-[#457b9d] mb-4"></i>
+          <h4 class="text-xl font-semibold text-dark-blue">Risk Assessment & Management</h4>
+          <p class="text-gray-600 mt-2 text-sm">Identifying, evaluating, and mitigating regulatory risks effectively.</p>
+        </div>
+        <!-- Skill 3 -->
+        <div class="skill-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30 hover:-translate-y-2">
+          <i class="fas fa-search text-4xl text-[#457b9d] mb-4"></i>
+          <h4 class="text-xl font-semibold text-dark-blue">Attention to Detail</h4>
+          <p class="text-gray-600 mt-2 text-sm">Meticulous verification and thorough documentation review.</p>
+        </div>
+        <!-- Skill 4 -->
+        <div class="skill-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30 hover:-translate-y-2">
+          <i class="fas fa-comments text-4xl text-[#457b9d] mb-4"></i>
+          <h4 class="text-xl font-semibold text-dark-blue">Effective Communication</h4>
+          <p class="text-gray-600 mt-2 text-sm">Clear, concise reporting and stakeholder engagement.</p>
+        </div>
+        <!-- Skill 5 -->
+        <div class="skill-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30 hover:-translate-y-2">
+          <i class="fas fa-shield-alt text-4xl text-[#457b9d] mb-4"></i>
+          <h4 class="text-xl font-semibold text-dark-blue">AML, KYC & Sanctions Compliance</h4>
+          <p class="text-gray-600 mt-2 text-sm">In-depth knowledge of UK and international regulations.</p>
+        </div>
+        <!-- Skill 6 -->
+        <div class="skill-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30 hover:-translate-y-2">
+          <i class="fas fa-handshake text-4xl text-[#457b9d] mb-4"></i>
+          <h4 class="text-xl font-semibold text-dark-blue">Interpersonal & Stakeholder Skills</h4>
+          <p class="text-gray-600 mt-2 text-sm">Building trust and collaboration across teams and clients.</p>
+        </div>
+        <!-- Skill 7 -->
+        <div class="skill-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30 hover:-translate-y-2">
+          <i class="fas fa-clock text-4xl text-[#457b9d] mb-4"></i>
+          <h4 class="text-xl font-semibold text-dark-blue">Time Management & Organisation</h4>
+          <p class="text-gray-600 mt-2 text-sm">Prioritising tasks to meet strict deadlines and SLAs.</p>
+        </div>
+        <!-- Skill 8 -->
+        <div class="skill-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30 hover:-translate-y-2">
+          <i class="fas fa-puzzle-piece text-4xl text-[#457b9d] mb-4"></i>
+          <h4 class="text-xl font-semibold text-dark-blue">Problem Solving & Conflict Resolution</h4>
+          <p class="text-gray-600 mt-2 text-sm">Creative solutions to compliance challenges and disputes.</p>
+        </div>
       </div>
     </section>
 
-    <!-- summary (fade-section) -->
-    <section id="summary" class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 scroll-mt-20 fade-section">
-      <h3 class="text-2xl font-bold text-dark-blue mb-4 border-b-2 border-[#457b9d] pb-2">SUMMARY</h3>
-      <p class="text-gray-700 leading-relaxed">Strategic and pragmatic Compliance Officer with over 8 years of experience in law firm environments, adept at designing and overseeing compliance frameworks, conflict screening, and client due diligence. Proven track record in mitigating regulatory risk, ensuring 100% adherence to AML, KYC, Sanctions, and data protection requirements. Skilled in collaborating with legal, IT, and risk teams to integrate automated compliance tools, streamline regulatory responses, and uphold firm-wide governance standards.</p>
+    <!-- Summary section -->
+    <section id="summary" class="scroll-mt-20 fade-up">
+      <div class="bg-gradient-to-r from-[#1d3557] to-[#457b9d] text-white p-8 rounded-3xl shadow-2xl">
+        <h3 class="text-3xl font-bold mb-4 inline-block border-b-4 border-[#8ecae6] pb-2">PROFESSIONAL SUMMARY</h3>
+        <p class="text-lg leading-relaxed">Strategic and pragmatic Compliance Officer with over 8 years of experience in law firm environments, adept at designing and overseeing compliance frameworks, conflict screening, and client due diligence. Proven track record in mitigating regulatory risk, ensuring 100% adherence to AML, KYC, Sanctions, and data protection requirements. Skilled in collaborating with legal, IT, and risk teams to integrate automated compliance tools, streamline regulatory responses, and uphold firm-wide governance standards.</p>
+      </div>
     </section>
 
-    <!-- work history (fade-section) – all positions and bullets preserved -->
-    <section id="work-history" class="scroll-mt-20 fade-section">
-      <h3 class="text-2xl font-bold text-dark-blue mb-6 border-b-2 border-[#457b9d] pb-2">WORK HISTORY</h3>
-      <div class="space-y-6">
+    <!-- Work History section -->
+    <section id="work-history" class="scroll-mt-20 fade-up">
+      <h3 class="text-3xl font-bold text-dark-blue mb-8 inline-block border-b-4 border-[#457b9d] pb-2">WORK HISTORY</h3>
+      <div class="space-y-8">
 
-        <!-- job 1 -->
-        <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300">
-          <div class="flex flex-wrap justify-between items-start gap-2">
-            <h4 class="text-xl font-semibold text-dark-blue">Compliance Officer (Contract)</h4>
-            <span class="text-sm bg-dark-blue text-white px-3 py-1 rounded-full whitespace-nowrap">May 2025 - Current .6666666666667</span>
+        <!-- Job 1 -->
+        <div class="job-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30">
+          <div class="flex flex-wrap justify-between items-start gap-3">
+            <h4 class="text-2xl font-semibold text-dark-blue">Compliance Officer (Contract)</h4>
+            <span class="date-badge bg-dark-blue text-white px-4 py-1 rounded-full text-sm whitespace-nowrap"><i class="far fa-calendar-alt mr-1"></i>May 2025 - Current </span>
           </div>
-          <p class="text-gray-600 font-medium">Lawbond Solicitors, Abuja, Nigeria</p>
-          <ul class="list-disc list-inside mt-3 space-y-1 text-gray-700 text-sm md:text-base">
+          <p class="text-gray-600 font-medium mt-1 flex items-center gap-2"><i class="fas fa-map-marker-alt text-[#457b9d]"></i>Lawbond Solicitors, Abuja, Nigeria</p>
+          <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700 text-sm md:text-base">
             <li>Implemented and managed conflict-of-interest screening for new client matters, identifying an average of 5 potential conflicts per quarter and advising on mitigations.</li>
             <li>Interpreted conflict search results and escalated high-risk cases, ensuring consistently zero compliance breaches and streamlining resolution within SLA.</li>
             <li>Maintained a complete digital audit trail of conflict decisions, enhancing transparency and audit preparedness during key reviews.</li>
@@ -96,14 +137,14 @@
           </ul>
         </div>
 
-        <!-- job 2 -->
-        <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition">
-          <div class="flex flex-wrap justify-between items-start gap-2">
-            <h4 class="text-xl font-semibold text-dark-blue">Senior Administrator (Volunteer)</h4>
-            <span class="text-sm bg-dark-blue text-white px-3 py-1 rounded-full">May 2025 - Current .6666666666667</span>
+        <!-- Job 2 -->
+        <div class="job-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30">
+          <div class="flex flex-wrap justify-between items-start gap-3">
+            <h4 class="text-2xl font-semibold text-dark-blue">Senior Administrator (Volunteer)</h4>
+            <span class="date-badge bg-dark-blue text-white px-4 py-1 rounded-full text-sm"><i class="far fa-calendar-alt mr-1"></i>May 2025 - Current </span>
           </div>
-          <p class="text-gray-600 font-medium">Project Yananai, London, United Kingdom</p>
-          <ul class="list-disc list-inside mt-3 space-y-1 text-gray-700 text-sm md:text-base">
+          <p class="text-gray-600 font-medium mt-1 flex items-center gap-2"><i class="fas fa-map-marker-alt text-[#457b9d]"></i>Project Yananai, London, United Kingdom</p>
+          <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700 text-sm md:text-base">
             <li>Lead and streamline the administration of our global initiatives</li>
             <li>Oversee communication and documentation with partners, funders, beneficiaries , and team members from diverse backgrounds</li>
             <li>Ensure compliance with international regulations and best practices</li>
@@ -112,14 +153,14 @@
           </ul>
         </div>
 
-        <!-- job 3 -->
-        <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition">
-          <div class="flex flex-wrap justify-between items-start gap-2">
-            <h4 class="text-xl font-semibold text-dark-blue">Compliance Manager</h4>
-            <span class="text-sm bg-dark-blue text-white px-3 py-1 rounded-full">May 2024 - Current .6666666666667</span>
+        <!-- Job 3 -->
+        <div class="job-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30">
+          <div class="flex flex-wrap justify-between items-start gap-3">
+            <h4 class="text-2xl font-semibold text-dark-blue">Compliance Manager</h4>
+            <span class="date-badge bg-dark-blue text-white px-4 py-1 rounded-full text-sm"><i class="far fa-calendar-alt mr-1"></i>May 2024 - Current </span>
           </div>
-          <p class="text-gray-600 font-medium">Mek Dry Lining , Chatham, United Kingdom</p>
-          <ul class="list-disc list-inside mt-3 space-y-1 text-gray-700 text-sm md:text-base">
+          <p class="text-gray-600 font-medium mt-1 flex items-center gap-2"><i class="fas fa-map-marker-alt text-[#457b9d]"></i>Mek Dry Lining , Chatham, United Kingdom</p>
+          <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700 text-sm md:text-base">
             <li>Assessed potential partners' adherence to industry rules before engaging business collaborations.</li>
             <li>Provided expert guidance on regulatory matters during the decision-making process at board meetings.</li>
             <li>Interpreted complex regulatory guidelines, simplifying them for use across all departments.</li>
@@ -129,14 +170,14 @@
           </ul>
         </div>
 
-        <!-- job 4 -->
-        <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition">
-          <div class="flex flex-wrap justify-between items-start gap-2">
-            <h4 class="text-xl font-semibold text-dark-blue">Advisor (Volunteer )</h4>
-            <span class="text-sm bg-dark-blue text-white px-3 py-1 rounded-full">August 2023 - December 2023 .6666666666667</span>
+        <!-- Job 4 -->
+        <div class="job-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30">
+          <div class="flex flex-wrap justify-between items-start gap-3">
+            <h4 class="text-2xl font-semibold text-dark-blue">Advisor (Volunteer)</h4>
+            <span class="date-badge bg-dark-blue text-white px-4 py-1 rounded-full text-sm"><i class="far fa-calendar-alt mr-1"></i>August 2023 - December 2023 </span>
           </div>
-          <p class="text-gray-600 font-medium">Citizens Advice Bureau, Gillingham, United Kingdom</p>
-          <ul class="list-disc list-inside mt-3 space-y-1 text-gray-700 text-sm md:text-base">
+          <p class="text-gray-600 font-medium mt-1 flex items-center gap-2"><i class="fas fa-map-marker-alt text-[#457b9d]"></i>Citizens Advice Bureau, Gillingham, United Kingdom</p>
+          <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700 text-sm md:text-base">
             <li>Conducted over interviews, using sensitive listening and questioning techniques to empower clients in articulatingconcerns and setting priorities, resulting in customized compliance guidance and increased client confidence.</li>
             <li>Leveraged the Citizens Advice AdviserNet and compliance resources to research and interpret regulatory information,achieving a 90% satisfaction rate in client decision-making support and enhancing overall compliance understanding.</li>
             <li>Maintained comprehensive case records with 100% continuity for over 10 cases, supporting compliance tracking, data integrity , and statistical reporting.</li>
@@ -148,14 +189,14 @@
           </ul>
         </div>
 
-        <!-- job 5 -->
-        <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition">
-          <div class="flex flex-wrap justify-between items-start gap-2">
-            <h4 class="text-xl font-semibold text-dark-blue">Legal and Compliance Manager</h4>
-            <span class="text-sm bg-dark-blue text-white px-3 py-1 rounded-full">April 2020 - January 2023 .6666666666667</span>
+        <!-- Job 5 -->
+        <div class="job-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30">
+          <div class="flex flex-wrap justify-between items-start gap-3">
+            <h4 class="text-2xl font-semibold text-dark-blue">Legal and Compliance Manager</h4>
+            <span class="date-badge bg-dark-blue text-white px-4 py-1 rounded-full text-sm"><i class="far fa-calendar-alt mr-1"></i>April 2020 - January 2023 </span>
           </div>
-          <p class="text-gray-600 font-medium">Acte Clair Solicitors, Onitsha, Nigeria</p>
-          <ul class="list-disc list-inside mt-3 space-y-1 text-gray-700 text-sm md:text-base">
+          <p class="text-gray-600 font-medium mt-1 flex items-center gap-2"><i class="fas fa-map-marker-alt text-[#457b9d]"></i>Acte Clair Solicitors, Onitsha, Nigeria</p>
+          <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700 text-sm md:text-base">
             <li>Designed and implemented the Law firm compliance program, reducing regulatory breaches by 35%.</li>
             <li>Monitored internal processes and conducted quarterly compliance audits to ensure regulatory conformity.</li>
             <li>Advised the board on key compliance issues and prepared regular compliance reports for senior management.</li>
@@ -165,14 +206,14 @@
           </ul>
         </div>
 
-        <!-- job 6 -->
-        <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition">
-          <div class="flex flex-wrap justify-between items-start gap-2">
-            <h4 class="text-xl font-semibold text-dark-blue">Compliance Analyst</h4>
-            <span class="text-sm bg-dark-blue text-white px-3 py-1 rounded-full">February 2018 - February 2020 .6666666666667</span>
+        <!-- Job 6 -->
+        <div class="job-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30">
+          <div class="flex flex-wrap justify-between items-start gap-3">
+            <h4 class="text-2xl font-semibold text-dark-blue">Compliance Analyst</h4>
+            <span class="date-badge bg-dark-blue text-white px-4 py-1 rounded-full text-sm"><i class="far fa-calendar-alt mr-1"></i>February 2018 - February 2020 </span>
           </div>
-          <p class="text-gray-600 font-medium">FCMB Bank, Onitsha, Nigeria</p>
-          <ul class="list-disc list-inside mt-3 space-y-1 text-gray-700 text-sm md:text-base">
+          <p class="text-gray-600 font-medium mt-1 flex items-center gap-2"><i class="fas fa-map-marker-alt text-[#457b9d]"></i>FCMB Bank, Onitsha, Nigeria</p>
+          <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700 text-sm md:text-base">
             <li>Maintained clear records of all compliance activities for audit purposes.</li>
             <li>Responded to compliance-related queries, keeping up to date with changes to regulations.</li>
             <li>Identified potential areas of compliance vulnerability, resulting in improved risk management.</li>
@@ -186,14 +227,14 @@
           </ul>
         </div>
 
-        <!-- job 7 -->
-        <div class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition">
-          <div class="flex flex-wrap justify-between items-start gap-2">
-            <h4 class="text-xl font-semibold text-dark-blue">Regulatory Compliance Officer</h4>
-            <span class="text-sm bg-dark-blue text-white px-3 py-1 rounded-full">October 2015 - January 2018 .6666666666667</span>
+        <!-- Job 7 -->
+        <div class="job-card bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30">
+          <div class="flex flex-wrap justify-between items-start gap-3">
+            <h4 class="text-2xl font-semibold text-dark-blue">Regulatory Compliance Officer</h4>
+            <span class="date-badge bg-dark-blue text-white px-4 py-1 rounded-full text-sm"><i class="far fa-calendar-alt mr-1"></i>October 2015 - January 2018 </span>
           </div>
-          <p class="text-gray-600 font-medium">Microfinance Bank, Lagos, Nigeria</p>
-          <ul class="list-disc list-inside mt-3 space-y-1 text-gray-700 text-sm md:text-base">
+          <p class="text-gray-600 font-medium mt-1 flex items-center gap-2"><i class="fas fa-map-marker-alt text-[#457b9d]"></i>Microfinance Bank, Lagos, Nigeria</p>
+          <ul class="list-disc list-inside mt-4 space-y-2 text-gray-700 text-sm md:text-base">
             <li>Assisted with customer onboarding processes, performing KYC and sanctions screening for new accounts.</li>
             <li>Reviewed client files for regulatory compliance with Nigerian Banking Regulations.</li>
             <li>Maintained accurate records of compliance assessments and followed up on remediation plans.</li>
@@ -208,84 +249,103 @@
       </div>
     </section>
 
-    <!-- education section – redesigned with icons (fade-section) -->
-    <section id="education" class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 scroll-mt-20 fade-section">
-      <h3 class="text-2xl font-bold text-dark-blue mb-4 border-b-2 border-[#457b9d] pb-2">EDUCATION</h3>
-      <div class="space-y-6">
-        <!-- LL.M -->
-        <div class="flex items-start gap-4">
-          <i class="fas fa-graduation-cap text-3xl text-[#457b9d] mt-1"></i>
-          <div>
-            <h4 class="text-lg font-semibold text-dark-blue">Master of Laws (LL.M), Financial Regulation and Compliance</h4>
-            <p class="text-gray-600">BPP University, Holborn · January 2023 - March 2024</p>
+    <!-- Education section with icons -->
+    <section id="education" class="scroll-mt-20 fade-up">
+      <h3 class="text-3xl font-bold text-dark-blue mb-8 inline-block border-b-4 border-[#457b9d] pb-2">EDUCATION</h3>
+      <div class="bg-white/70 backdrop-blur-sm p-8 rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30">
+        <div class="space-y-6">
+          <!-- LL.M -->
+          <div class="flex items-start gap-5">
+            <div class="bg-[#457b9d] text-white p-3 rounded-full"><i class="fas fa-graduation-cap text-2xl"></i></div>
+            <div>
+              <h4 class="text-xl font-semibold text-dark-blue">Master of Laws (LL.M), Financial Regulation and Compliance</h4>
+              <p class="text-gray-600">BPP University, Holborn · January 2023 - March 2024</p>
+            </div>
           </div>
-        </div>
-        <!-- BL -->
-        <div class="flex items-start gap-4">
-          <i class="fas fa-gavel text-3xl text-[#457b9d] mt-1"></i>
-          <div>
-            <h4 class="text-lg font-semibold text-dark-blue">BL (Hons), Barrister at Law</h4>
-            <p class="text-gray-600">Nigerian Law School, Lagos, Nigeria · January 2014 - January 2015</p>
+          <!-- BL -->
+          <div class="flex items-start gap-5">
+            <div class="bg-[#457b9d] text-white p-3 rounded-full"><i class="fas fa-gavel text-2xl"></i></div>
+            <div>
+              <h4 class="text-xl font-semibold text-dark-blue">BL (Hons), Barrister at Law</h4>
+              <p class="text-gray-600">Nigerian Law School, Lagos, Nigeria · January 2014 - January 2015</p>
+            </div>
           </div>
-        </div>
-        <!-- LLB -->
-        <div class="flex items-start gap-4">
-          <i class="fas fa-scale-balanced text-3xl text-[#457b9d] mt-1"></i>
-          <div>
-            <h4 class="text-lg font-semibold text-dark-blue">LLB (Hons), Bachelor of Law</h4>
-            <p class="text-gray-600">University of Nigeria, Enugu · January 2008 - January 2013</p>
+          <!-- LLB -->
+          <div class="flex items-start gap-5">
+            <div class="bg-[#457b9d] text-white p-3 rounded-full"><i class="fas fa-scale-balanced text-2xl"></i></div>
+            <div>
+              <h4 class="text-xl font-semibold text-dark-blue">LLB (Hons), Bachelor of Law</h4>
+              <p class="text-gray-600">University of Nigeria, Enugu · January 2008 - January 2013</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- certifications section – redesigned with icons (fade-section) -->
-    <section id="certifications" class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 scroll-mt-20 fade-section">
-      <h3 class="text-2xl font-bold text-dark-blue mb-4 border-b-2 border-[#457b9d] pb-2">CERTIFICATIONS</h3>
-      <div class="space-y-4">
-        <div class="flex items-start gap-4">
-          <i class="fas fa-certificate text-2xl text-[#457b9d] mt-1"></i>
-          <span class="text-gray-700">ICA Specialist Certificate in Financial Crime Risk in Global Banking and Markets (2025)</span>
-        </div>
-        <div class="flex items-start gap-4">
-          <i class="fas fa-certificate text-2xl text-[#457b9d] mt-1"></i>
-          <span class="text-gray-700">ICA Association Membership (International Compliance Association, 2025)</span>
-        </div>
-        <div class="flex items-start gap-4">
-          <i class="fas fa-certificate text-2xl text-[#457b9d] mt-1"></i>
-          <span class="text-gray-700">Associate of the Chartered Institute of Arbitrators Nigeria (2021)</span>
-        </div>
-        <div class="flex items-start gap-4">
-          <i class="fas fa-certificate text-2xl text-[#457b9d] mt-1"></i>
-          <span class="text-gray-700">Fundamentals of Business Law (Alison, 2022)</span>
-        </div>
-        <div class="flex items-start gap-4">
-          <i class="fas fa-certificate text-2xl text-[#457b9d] mt-1"></i>
-          <span class="text-gray-700">Introduction to Criminal Investigations; Processes, Practises and Principles (Alison, 2022)</span>
+    <!-- Certifications section with icons -->
+    <section id="certifications" class="scroll-mt-20 fade-up">
+      <h3 class="text-3xl font-bold text-dark-blue mb-8 inline-block border-b-4 border-[#457b9d] pb-2">CERTIFICATIONS</h3>
+      <div class="bg-white/70 backdrop-blur-sm p-8 rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30">
+        <div class="space-y-4">
+          <div class="flex items-start gap-4">
+            <i class="fas fa-certificate text-2xl text-[#457b9d] mt-1"></i>
+            <span class="text-gray-700">ICA Specialist Certificate in Financial Crime Risk in Global Banking and Markets (2025)</span>
+          </div>
+          <div class="flex items-start gap-4">
+            <i class="fas fa-certificate text-2xl text-[#457b9d] mt-1"></i>
+            <span class="text-gray-700">ICA Association Membership (International Compliance Association, 2025)</span>
+          </div>
+          <div class="flex items-start gap-4">
+            <i class="fas fa-certificate text-2xl text-[#457b9d] mt-1"></i>
+            <span class="text-gray-700">Associate of the Chartered Institute of Arbitrators Nigeria (2021)</span>
+          </div>
+          <div class="flex items-start gap-4">
+            <i class="fas fa-certificate text-2xl text-[#457b9d] mt-1"></i>
+            <span class="text-gray-700">Fundamentals of Business Law (Alison, 2022)</span>
+          </div>
+          <div class="flex items-start gap-4">
+            <i class="fas fa-certificate text-2xl text-[#457b9d] mt-1"></i>
+            <span class="text-gray-700">Introduction to Criminal Investigations; Processes, Practises and Principles (Alison, 2022)</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- contact section (fade-section) -->
-    <section id="contact" class="bg-white/70 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-2xl transition duration-300 scroll-mt-20 fade-section">
-      <h3 class="text-2xl font-bold text-dark-blue mb-4 border-b-2 border-[#457b9d] pb-2">CONTACT</h3>
-      <div class="grid md:grid-cols-2 gap-4 text-gray-800">
-        <div class="space-y-2">
-          <p><span class="font-semibold w-24 inline-block">number:</span> 07897636720</p>
-          <p><span class="font-semibold w-24 inline-block">email:</span> nwangwuca@gmail.com</p>
-          <p><span class="font-semibold w-24 inline-block">location:</span> Chatham, United Kingdom</p>
-        </div>
-        <div class="space-y-2">
-          <p><span class="font-semibold w-24 inline-block">LinkedIn:</span> <a href="http://linkedin.com/in/chiamaka-caroline-nwangwu-6a4aa9169" target="_blank" rel="noopener" class="text-dark-blue underline hover:text-[#457b9d] break-all">http://linkedin.com/in/chiamaka-caroline-nwangwu-6a4aa9169</a></p>
+    <!-- Contact section -->
+    <section id="contact" class="scroll-mt-20 fade-up">
+      <h3 class="text-3xl font-bold text-dark-blue mb-8 inline-block border-b-4 border-[#457b9d] pb-2">CONTACT</h3>
+      <div class="bg-white/70 backdrop-blur-sm p-8 rounded-3xl shadow-lg hover:shadow-2xl transition duration-300 border border-white/30">
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="bg-[#457b9d] text-white p-3 rounded-full"><i class="fas fa-phone-alt"></i></div>
+              <div><span class="font-semibold">Number:</span> 07897636720</div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="bg-[#457b9d] text-white p-3 rounded-full"><i class="fas fa-envelope"></i></div>
+              <div><span class="font-semibold">Email:</span> nwangwuca@gmail.com</div>
+            </div>
+            <div class="flex items-center gap-3">
+              <div class="bg-[#457b9d] text-white p-3 rounded-full"><i class="fas fa-map-marker-alt"></i></div>
+              <div><span class="font-semibold">Location:</span> Chatham, United Kingdom</div>
+            </div>
+          </div>
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <div class="bg-[#457b9d] text-white p-3 rounded-full"><i class="fab fa-linkedin-in"></i></div>
+              <div><span class="font-semibold">LinkedIn:</span> <a href="https://www.linkedin.com/in/chiamaka-nwangwu-6a4aa9169/" target="_blank" class="text-dark-blue underline hover:text-[#457b9d] break-all">linkedin.com/in/chiamaka-caroline-nwangwu-6a4aa9169</a></div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- footer with colour #457b9d -->
-  <footer class="bg-medium-blue text-white py-6 mt-12">
+  <!-- Footer with colour #457b9d -->
+  <footer class="bg-medium-blue text-white py-8 mt-16">
     <div class="container mx-auto px-4 text-center">
       <p class="text-sm md:text-base">© <span id="current-year"></span> CHIAMAKA CAROLINE NWANGWU – All rights reserved. Compliance portfolio.</p>
+      <p class="text-xs mt-2 opacity-80">Designed with <i class="fas fa-heart text-red-300"></i> for professionalism and impact.</p>
     </div>
   </footer>
 

@@ -1,4 +1,4 @@
-// script.js – dynamic year, header shadow, and improved intersection observer for fade sections
+// script.js – dynamic year, intersection observer for fade-up, header shadow, and extra interactivity
 
 document.addEventListener('DOMContentLoaded', function() {
   // Set current year in footer
@@ -7,34 +7,36 @@ document.addEventListener('DOMContentLoaded', function() {
     yearSpan.textContent = new Date().getFullYear();
   }
 
-  // Add shadow to header when scrolled
+  // Add shadow to header on scroll
   const header = document.querySelector('header');
   if (header) {
     window.addEventListener('scroll', () => {
       if (window.scrollY > 10) {
-        header.classList.add('shadow-xl');
+        header.classList.add('shadow-xl', 'bg-opacity-95');
       } else {
-        header.classList.remove('shadow-xl');
+        header.classList.remove('shadow-xl', 'bg-opacity-95');
       }
     });
   }
 
-  // Intersection Observer for fade-in sections – triggers earlier (rootMargin)
-  const sections = document.querySelectorAll('.fade-section');
+  // Intersection Observer for fade-up sections (triggers earlier)
+  const faders = document.querySelectorAll('.fade-up');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('section-visible');
+        entry.target.classList.add('visible');
       }
     });
   }, {
-    threshold: 0,
-    rootMargin: "50px 0px 50px 0px" // triggers when section is within 50px of viewport
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px' // adjust to trigger slightly before section enters
   });
 
-  sections.forEach(section => {
-    observer.observe(section);
+  faders.forEach(fader => {
+    observer.observe(fader);
   });
 
-  console.log('✅ Portfolio loaded – smooth scroll, early fade animations, hover effects active.');
+  // Optional: add hover sound? no, but we can add a subtle ripple effect on buttons
+  // Not needed, but we can log
+  console.log('✅ Portfolio with advanced interactivity loaded – enjoy!');
 });
