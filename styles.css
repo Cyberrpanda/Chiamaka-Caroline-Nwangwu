@@ -1,4 +1,4 @@
-/* styles.css - custom colour palette, animations, and interactive effects */
+/* styles.css - Optimised for performance, no backdrop-blur on cards, reduced hover transforms */
 
 /* Colour variables */
 .bg-dark-blue {
@@ -31,7 +31,7 @@ html {
 .fade-up {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
 .fade-up.visible {
@@ -39,38 +39,27 @@ html {
   transform: translateY(0);
 }
 
-/* Floating animation for hero image */
-.floating {
-  animation: float 4s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-15px); }
-  100% { transform: translateY(0px); }
-}
-
-/* Skill cards */
+/* Skill cards - simpler hover effect */
 .skill-card {
-  transition: all 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.15);
 }
 
-/* Job cards */
+/* Job cards - removed scale, only shadow and slight lift */
 .job-card {
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .job-card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.2);
 }
 
-/* Date badge */
+/* Date badge - no change */
 .date-badge {
   background: linear-gradient(135deg, #1d3557 0%, #457b9d 100%);
 }
@@ -95,14 +84,13 @@ html {
   width: 100%;
 }
 
-/* Glassmorphism effect for cards (already in HTML classes) */
-.backdrop-blur-sm {
-  backdrop-filter: blur(8px);
+/* No backdrop-blur on any cards to reduce GPU load */
+.bg-white\/80 {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Responsive tweaks */
-@media (max-width: 640px) {
-  .skill-card {
-    padding: 1rem;
-  }
+/* Ensure images are not too heavy */
+img {
+  max-width: 100%;
+  height: auto;
 }
